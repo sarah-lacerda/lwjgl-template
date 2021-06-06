@@ -50,7 +50,7 @@ This template is divided into the following:
    
    TODO: Project structure
    
-   # Getting started
+   ## Getting started
    
    TODO: configuration and building/running
   
