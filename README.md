@@ -138,7 +138,6 @@ This solution can be seen being used inside the main method inside `Application.
      if (keyListener.isKeyPressed(GLFW_KEY_SPACE)) {
             System.out.println("Space key is being pressed!");
         }
-     //
    ```
    2) [Window Resize Listener](/src/main/java/glfw/listeners/WindowResizeListener.java): This listener will execute whatever is inside the method `reshape(long window, int width, int height);` whenever GLFW detects that the window has been resized.
 
