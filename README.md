@@ -6,8 +6,8 @@
 
 🐘 This is a Gradle project, it comes with the following dependencies:
 
-- Everything needed to spin up a simple [LWJGL](lwjgl.org) application with [GLFW](glfw.org).
-- [Java OpenGL Math Library](joml-ci.github.io/JOML)
+- Everything needed to spin up a simple [LWJGL](https://lwjgl.org) application with [GLFW](https://glfw.org).
+- [Java OpenGL Math Library](https://joml-ci.github.io/JOML)
 - [guacamole:](https://github.com/crykn/guacamole) A small collection of some common and very basic utilities for libGDX games
 
 For more details about dependencies, take a look at the [build.gradle](build.gradle) file
@@ -74,7 +74,7 @@ Caused by: java.lang.IllegalStateException: GLFW windows may only be created on 
 ```
 _More on that [here](http://forum.lwjgl.org/index.php?topic=6077.0)._  
 As cited on the message above, a fix for that would be setting up the JVM flag `-XstartOnFirstThread`. Even so, this is a manual process that needs to be done every time before the application is run on a MacOs system.  
-In order to avoid having to do anything outside of the application itself, a helper function [startNewJvmIfRequired()](https://github.com/crykn/guacamole/blob/master/gdx-desktop/src/main/java/de/damios/guacamole/gdx/StartOnFirstThreadHelper.java) is being used for this template, that will automatically start a new JVM with the necessary flag if the application was started on macOS without `-XstartOnFirstThread`.  
+In order to avoid having to do anything outside of the application itself, a helper function [startNewJvmIfRequired()](https://github.com/crykn/guacamole/blob/eabb0ae27aecafad2ced071daf505b7222ec0074/gdx-desktop/src/main/java/de/damios/guacamole/gdx/StartOnFirstThreadHelper.java#L150) is being used for this template, that will automatically start a new JVM with the necessary flag if the application was started on macOS without `-XstartOnFirstThread`.  
 This solution can be seen being used inside the main method inside `Application.java` (as shown on the snippet above) and was provided by the [guacamole collection](https://github.com/crykn/guacamole), thanks for that! :pray:
 
 ## [Util package](/src/main/java/util):
