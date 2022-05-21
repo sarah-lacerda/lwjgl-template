@@ -14,10 +14,16 @@ For more details about dependencies, take a look at the [build.gradle](build.gra
 
 ## Getting started
    
-   Clone this template:
+   Get this template by clicking on the `Use this template` button at the top of this page
    
+   ![Use this template button](https://i.ibb.co/3hJhKZ7/Capture.png)
+   
+   This will generate a repository of your own with this template inside.
+   After creating your brand new repository, go ahead and clone your repo:
+   
+   Eg:
    ``` console
-   git@github.com:sarah-lacerda/lwjgl-template.git
+   git@github.com:your-username/your-brand-new-repo.git
    ```
   
    Choose a name for your project by changing the default name set inside [settings.gradle](settings.gradle):
